@@ -31,7 +31,7 @@ class DuCopyright:
     for copyright_file in copyright_files:
       extension = DuCopyright.get_extension(copyright_file)
       with open(copyright_file, 'r', encoding='utf8') as f:
-        self._copyright[extension] = f.readlines()
+        self._copyright[extension] = f.readlines() + ['\n']
     self._year = datetime.date.today().year
     self._authors = 'Ruofei Du'
 
@@ -76,7 +76,11 @@ class DuCopyright:
         lines = copyright_block + lines
         num_added += 1
       else:
-        lines = copyright_block + lines[len(copyright_block):]
+        first_valid_line = 0
+        while lines[first_valid_line].strip(
+        ) == '' or lines[first_valid_line][0] == copyright_block[0][0]:
+          first_valid_line += 1
+        lines = copyright_block + lines[first_valid_line:]
         num_modified += 1
 
       # Formats the copyright block for each file.

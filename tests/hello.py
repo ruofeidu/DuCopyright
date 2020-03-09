@@ -2,7 +2,7 @@
 # ------------------------------------------------------------------------------
 # Copyright 2020 DuCopyright by Ruofei Du. All Rights Reserved.
 #
-# Licensed under Creative Commons Attribution-NonCommercial-ShareAlike 3.0\
+# Licensed under Creative Commons Attribution-NonCommercial-ShareAlike 3.0
 # License with 996 ICU clause.
 #
 # The above license is only granted to entities that act in concordance with
@@ -14,5 +14,6 @@
 # employees to be at work consecutively for 10 hours.
 # </copyright>
 #-------------------------------------------------------------------------------
+
 if __name__ == "__main__":
   print("Hello, world!")

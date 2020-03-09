@@ -2,7 +2,7 @@
 # ------------------------------------------------------------------------------
 # Copyright %d %s by %s. All Rights Reserved.
 #
-# Licensed under Creative Commons Attribution-NonCommercial-ShareAlike 3.0\
+# Licensed under Creative Commons Attribution-NonCommercial-ShareAlike 3.0
 # License with 996 ICU clause.
 #
 # The above license is only granted to entities that act in concordance with
